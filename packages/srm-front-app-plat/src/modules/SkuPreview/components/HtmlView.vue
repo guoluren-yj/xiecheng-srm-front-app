@@ -7,6 +7,7 @@
       width="100%"
       :height="iframeHeight"
       frameBorder="none"
+      sandbox="allow-same-origin"
       style="border: 'none'"/>
     <!-- :srcDoc="`<style>img{max-width:100%;height:auto;}${injectCss || ''}</style>${html}`" -->
     <!-- onLoad="handleChangeIframeHeight" -->
@@ -19,6 +20,7 @@
 
 <script>
 import { $T } from "srm-mobile-ui";
+import { sanitizeHtml } from "@/utils/sanitizeHtml";
 export default {
   modules: [ "smpc.product" ],
   name: "HtmlView",
@@ -40,7 +42,7 @@ export default {
       if (val && this.$refs.htmlIframe) {
         // 移动端兼容性
         this.$refs.htmlIframe.contentWindow.document.write(
-          `<style>img{max-width:100%;height:auto;}${this.injectCss || ""}</style>${this.html}`
+          `<style>img{max-width:100%;height:auto;}${this.injectCss || ""}</style>${sanitizeHtml(val)}`
         );
       }
       this.timer = setTimeout(() => this.handleChangeIframeHeight(), 1000);

@@ -140,6 +140,7 @@
 
 <script>
 import { DataSet, $T } from "srm-mobile-ui";
+import { sanitizeHtml } from "@/utils/sanitizeHtml";
 import { commonDs, priceInfoDs } from "../datasource/commodityApprovalDs";
 import { getAllProductApi, getProductAttrApi, getCustomSkuApi } from "../api";
 import colors from "../datasource/colors";
@@ -1046,7 +1047,7 @@ export default {
         this.$emit("setData", data);
         console.log("setData", data);
         this.introduction = data.introduction;
-        document.getElementById("productIntro").innerHTML = this.introduction;
+        document.getElementById("productIntro").innerHTML = sanitizeHtml(this.introduction);
         this.productInfoDataSet.setData([ { ...data, customFlag: res.customFlag } ]);
         this.thirdInfoDataSet.setData([ { ...data } ]);
         this.productGroupInfoDataSet.setData([ { ...res } ]);

@@ -163,6 +163,7 @@
 
 <script>
 import { DataSet, $T, SrmMath, SrmTooltip } from "srm-mobile-ui";
+import { sanitizeHtml } from "@/utils/sanitizeHtml";
 import { commonDs, priceInfoDs } from "../dataSource/commodityApprovalDs";
 import { getAllProductApi, getProductAttrApi, getCustomSkuApi } from "../api";
 import colors from "../dataSource/colors";
@@ -1072,7 +1073,7 @@ export default {
         // 把数据传给父组件
         this.$emit("setData", data);
         this.introduction = data.introduction;
-        document.getElementById("productIntro").innerHTML = this.introduction;
+        document.getElementById("productIntro").innerHTML = sanitizeHtml(this.introduction);
         this.productInfoDataSet.setData([ { ...data, customFlag: res.customFlag } ]);
         this.thirdInfoDataSet.setData([ { ...data } ]);
         this.productGroupInfoDataSet.setData([ { ...res } ]);
