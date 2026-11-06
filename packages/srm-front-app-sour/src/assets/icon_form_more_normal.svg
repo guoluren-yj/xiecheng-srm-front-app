@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="12px" height="12px" viewBox="0 0 12 12" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 59 (86127) - https://sketch.com -->
+    <title>icon_form_more_normal</title>
+    <desc>Created with Sketch.</desc>
+    <g id="icon_MVP2.0" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Apple-TV" transform="translate(-1224.000000, -559.000000)" fill-rule="nonzero">
+            <g id="icon_form_more_normal" transform="translate(1224.000000, 559.000000)">
+                <rect id="矩形" fill="#000000" opacity="0" x="0" y="0" width="12" height="12"></rect>
+                <path d="M5.6484375,1.78125 L6.3515625,1.78125 C6.4140625,1.78125 6.4453125,1.8125 6.4453125,1.875 L6.4453125,10.125 C6.4453125,10.1875 6.4140625,10.21875 6.3515625,10.21875 L5.6484375,10.21875 C5.5859375,10.21875 5.5546875,10.1875 5.5546875,10.125 L5.5546875,1.875 C5.5546875,1.8125 5.5859375,1.78125 5.6484375,1.78125 Z M2.0625,5.5546875 L9.9375,5.5546875 C10,5.5546875 10.03125,5.5859375 10.03125,5.6484375 L10.03125,6.3515625 C10.03125,6.4140625 10,6.4453125 9.9375,6.4453125 L2.0625,6.4453125 C2,6.4453125 1.96875,6.4140625 1.96875,6.3515625 L1.96875,5.6484375 C1.96875,5.5859375 2,5.5546875 2.0625,5.5546875 Z" id="形状" fill="#414660"></path>
+            </g>
+        </g>
+    </g>
+</svg>

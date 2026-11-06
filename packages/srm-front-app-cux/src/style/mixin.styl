@@ -1,0 +1,33 @@
+blue = {
+  name: "blue",
+  icon_editor:url('~@/assets/icon_editor@3x.png'),
+  icon_editor_b:url('~@/assets/icon_editor@3x.png'),
+  img_ocrbg:url('~@/assets/img_ocrbg@3x.png'),
+  icon_list_right_grey_normal:url('../../../assets/icon_list_right_grey_normal@3x.png'),
+}
+white = {
+  name: "white",
+  icon_editor:url('~@/assets/icon_editor@3x.png'),
+  icon_editor_b:url('~@/assets/icon_editor@3x.png'),
+  img_ocrbg:url('~@/assets/img_ocrbg@3x.png'),
+  icon_list_right_grey_normal:url('../../../assets/icon_list_right_grey_normal@3x.png'),
+}
+dark = {
+  name: "dark",
+  icon_editor:url('~@/assets/more_app.png'),
+  icon_editor_b:url('~@/assets/icon_editor@3x.png'),
+  img_ocrbg:url('~@/assets/img_ocrbg@3x.png'),
+  icon_list_right_grey_normal:url('~@/assets/icon_list_right_grey_normal@3x.png'),
+}
+
+themeList = (blue white dark);
+
+// 解决内部图片无法更换
+bg_url($url)
+    background-image: blue[$url];
+
+    for item in themeList
+        [data-theme = {item.name}] & {
+            background-image: item[$url];
+        }
+

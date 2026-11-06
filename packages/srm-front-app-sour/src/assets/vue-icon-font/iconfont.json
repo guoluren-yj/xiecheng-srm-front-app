@@ -1,0 +1,51 @@
+{
+  "id": "4681073",
+  "name": "vue-icon",
+  "font_family": "element-icons",
+  "css_prefix_text": "el-icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "25941350",
+      "name": "error",
+      "font_class": "error",
+      "unicode": "e747",
+      "unicode_decimal": 59207
+    },
+    {
+      "icon_id": "20495216",
+      "name": "文章详情-赞踩-01",
+      "font_class": "zan",
+      "unicode": "e602",
+      "unicode_decimal": 58882
+    },
+    {
+      "icon_id": "2813329",
+      "name": "文章详情-赞踩-01",
+      "font_class": "zan-good",
+      "unicode": "e670",
+      "unicode_decimal": 58992
+    },
+    {
+      "icon_id": "41908705",
+      "name": "translate",
+      "font_class": "translate",
+      "unicode": "e601",
+      "unicode_decimal": 58881
+    },
+    {
+      "icon_id": "41712942",
+      "name": "file-history-line",
+      "font_class": "file-history-line",
+      "unicode": "ee4b",
+      "unicode_decimal": 61003
+    },
+    {
+      "icon_id": "16613328",
+      "name": "network",
+      "font_class": "network",
+      "unicode": "e67a",
+      "unicode_decimal": 59002
+    }
+  ]
+}

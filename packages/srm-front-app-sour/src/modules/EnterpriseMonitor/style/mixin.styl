@@ -1,0 +1,12 @@
+@import "./theme.styl";
+
+// 解决内部图片无法更换
+bg_url($url)
+    background-image: blue[$url];
+
+    for item in themeList
+        [data-theme = {item.name}] & {
+            background-image: item[$url];
+        }
+
+ 

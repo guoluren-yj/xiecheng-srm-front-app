@@ -1,1 +1,1 @@
-include: https://open-gitlab.going-link.com/operation-sre/uci/raw/master/.gitlab-ci-front-app-submodule.yml
+include: https://open-gitlab.going-link.com/operation-sre/uci/raw/master/.gitlab-ci-front-app.yml
