@@ -1,0 +1,52 @@
+.app-loading {
+  position: fixed;
+  left: 50vw;
+  top: 50vh;
+  background: #ffffff55;
+  color: #276EF1;
+  transform: translate(-50%, -50%);
+}
+
+.circle-loading-svg {
+  width: 24px;
+  height: 24px;
+  animation: loading-rotate 1.4s linear infinite;
+  line-height: 1;
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  transform: rotate(-90deg);
+  stroke: #276EF1;
+}
+
+.circle-loading-svg circle {
+  animation: loading-circle 1.4s ease-in-out infinite;
+  fill: none;
+  stroke-width: 4;
+  stroke-dasharray: 80px 200px;
+  stroke-dashoffset: 0;
+}
+
+@keyframes loading-circle {
+  0% {
+    stroke-dasharray: 1px 200px;
+    stroke-dashoffset: 0;
+  }
+  30% {
+    stroke-dasharray: 100px 200px;
+    stroke-dashoffset: -15px;
+  }
+  100% {
+    stroke-dasharray: 100px 200px;
+    stroke-dashoffset: -120px;
+  }
+}
+
+@keyframes loading-rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(1turn);
+  }
+}
